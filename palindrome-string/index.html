@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "level";
+      let newStr = "care";
+      function checkPalindrome(str) {
+        let str2 = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+          str2 += str[i];
+        }
+        return str == str2;
+      }
+
+      console.log(checkPalindrome(newStr));
+      console.log(checkPalindrome(str));
+    </script>
+  </body>
+</html>
